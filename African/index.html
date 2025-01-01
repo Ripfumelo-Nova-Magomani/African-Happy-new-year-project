@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African New Year Celebration</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./images/x-icon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative min-h-screen">
+    <!-- Hero Background -->
+    <div class="hero-background"></div>
+    <div class="african-pattern"></div>
+
+    <!-- Header -->
+    <header class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <!-- Logo Placeholder -->
+        <img src="./images/African_logo.png" alt="African Emblem Logo" class="logo">
+        
+        <!-- Language Toggle -->
+        <div class="language-toggle">
+            <span id="langEn" class="language-btn active" data-lang="en">🇬🇧 EN</span>
+            <span id="langRu" class="language-btn" data-lang="ru">🇷🇺 RU</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="container mx-auto px-4 flex flex-col justify-center items-center text-center min-h-screen">
+        <h1 id="mainTitle" class="text-6xl font-bold text-red-800 mb-6">Happy New Year!</h1>
+        
+        <div class="bg-yellow-800 bg-opacity-80 text-white p-8 rounded-lg shadow-lg max-w-2xl">
+            <h2 id="mainSubtitle" class="text-4xl mb-4">Celebrate African New Year</h2>
+            <p id="mainDescription" class="text-xl mb-6">
+                Embrace the vibrant spirit of new beginnings with African warmth and joy!
+            </p>
+            <button id="ctaButton" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-full">
+                Learn More
+            </button>
+        </div>
+    </main>
+
+    <!-- New Year Popup -->
+    <div id="newYearPopup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="absolute top-4 right-4 text-3xl cursor-pointer text-white">&times;</span>
+            <h2 id="popupTitle" class="text-4xl text-yellow-500 mb-4">🎉 New Year Celebration! 🎉</h2>
+            <img src="./images/landscape poster.png" alt="African New Year Poster" style="max-width: 100%; height: auto;">
+            <p id="popupDescription" class="text-xl mb-4">
+                Join us in celebrating new beginnings with African spirit and hope!
+            </p>
+            <button id="popupLearnMore" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full">
+                Learn More
+            </button>
+        </div>
+    </div>
+
+    <!-- Modals Container -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content bg-white rounded-lg shadow-xl p-6">
+            <span class="close-modal absolute top-4 right-4 text-2xl cursor-pointer">&times;</span>
+            <h2 class="text-3xl font-bold mb-4 text-yellow-800">About African New Year Celebration</h2>
+            <div class="space-y-4 text-gray-700">
+                <p>The African New Year Celebration is a vibrant festival that embraces the rich cultural heritage and diverse traditions of the African continent. Our mission is to bring communities together, celebrate new beginnings, and honor the spirit of unity and hope.</p>
+                <p>Each year, we create a platform for people to connect, share experiences, and look forward to the promising journey ahead. Our celebration is more than just an event – it's a testament to the resilience, creativity, and warmth of African communities.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="eventsModal" class="modal">
+        <div class="modal-content bg-white rounded-lg shadow-xl p-6">
+            <span class="close-modal absolute top-4 right-4 text-2xl cursor-pointer">&times;</span>
+            <h2 class="text-3xl font-bold mb-4 text-yellow-800">Upcoming New Year Events</h2>
+            <div class="space-y-4">
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-yellow-900">Cultural Showcase</h3>
+                    <p class="text-gray-700">A day-long event featuring traditional music, dance, and art from various African regions.</p>
+                    <p class="text-sm text-gray-500">Date: January 15th, 2024 | Time: 10:00 AM - 6:00 PM</p>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-yellow-900">Community Feast</h3>
+                    <p class="text-gray-700">A communal dinner celebrating African cuisine and bringing people together.</p>
+                    <p class="text-sm text-gray-500">Date: January 20th, 2024 | Time: 7:00 PM</p>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-yellow-900">New Beginnings Concert</h3>
+                    <p class="text-gray-700">An evening of music featuring African artists and performers.</p>
+                    <p class="text-sm text-gray-500">Date: January 25th, 2024 | Time: 8:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div id="contactModal" class="modal">
+    <div class="modal-content bg-white rounded-lg shadow-xl p-6">
+        <span class="close-modal absolute top-4 right-4 text-2xl cursor-pointer">&times;</span>
+        <h2 class="text-3xl font-bold mb-4 text-yellow-800">Contact Us</h2>
+        <form id="contactForm" class="space-y-4">
+            <div class="input-wrapper">
+                <input type="text" id="name" placeholder=" " required class="input-animated w-full p-2 border-b-2 text-gray-700">
+                <label for="name" class="input-label">Your Name</label>
+            </div>
+            <div class="input-wrapper">
+                <input type="email" id="email" placeholder=" " required class="input-animated w-full p-2 border-b-2 text-gray-700">
+                <label for="email" class="input-label">Your Email</label>
+            </div>
+            <div class="input-wrapper">
+                <textarea id="message" placeholder=" " required class="input-animated w-full p-2 border-b-2 text-gray-700 h-32"></textarea>
+                <label for="message" class="input-label">Your Message</label>
+            </div>
+            <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded-full transition duration-300">
+                Send Message
+            </button>
+        </form>
+        <div id="formResponse" class="mt-4 text-center"></div>
+    </div>
+</div>
+    
+
+    <!-- Footer -->
+<footer class="container mx-auto px-4 py-8 text-center">
+    <div class="flex justify-center space-x-4 mb-4">
+        <ul class="social-network social-circle">
+            <li><a href="#" class="icoEnvelope" title="Email"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ripfumelo-nova-magomani/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" class="icoWhatsapp" title="Whatsapp"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="https://github.com/Ripfumelo-Nova-Magomani" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/novacodings/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <p id="footerDescription" class="text-sm text-gray-700 mb-2">
+        Celebrating the spirit of African New Year with hope, joy, and unity
+    </p>
+    <nav class="space-x-4">
+        <a href="#" data-page="about" class="text-sm text-blue-600">About</a>
+        <a href="#" data-page="events" class="text-sm text-blue-600">Events</a>
+        <a href="#" data-page="contact" class="text-sm text-blue-600">Contact</a>
+    </nav>
+<br>
+    <p id="copyright" class="text-sm text-gray-700">
+        &copy; 2024 African New Year Celebration. All rights reserved | Нова Магомани.
+    </p>
+</footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

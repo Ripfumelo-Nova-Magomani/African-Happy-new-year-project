@@ -1,0 +1,63 @@
+Here’s a sample README guide for your landing page:
+
+African New Year Celebration Landing Page
+Overview
+The African New Year Celebration Landing Page is a vibrant and responsive web interface designed to celebrate the African New Year. It features cultural motifs, a dynamic hero section, popup modals, a language toggle, and a contact form. This page is styled with TailwindCSS and includes interactive JavaScript functionality.
+
+Features
+Hero Section:
+A visually striking hero section with:
+
+A greeting title: "Happy New Year!"
+Subheading and description.
+A "Learn More" button for further engagement.
+Language Toggle:
+
+Easily switch between English (EN) and Russian (RU) with dynamic translations.
+Popup Modal:
+
+A popup showcasing the New Year celebration details.
+Includes an image and a "Learn More" button.
+Interactive Modals:
+
+About Modal: Details about the African New Year celebration.
+Events Modal: Lists upcoming events with descriptions.
+Contact Modal: A functional contact form.
+Responsive Design:
+
+Mobile-friendly layout using TailwindCSS.
+Content adapts seamlessly to various screen sizes.
+Footer with Social Media Links:
+
+Links to email, LinkedIn, WhatsApp, GitHub, and Instagram.
+File Structure
+index.html: The main HTML file for the landing page.
+style.css: Contains custom styles.
+script.js: Includes JavaScript for interactivity (language toggle, modals, etc.).
+images/: A folder containing the African logo, popup poster, and other images.
+Usage Instructions
+Setup the Files:
+
+Ensure all files (index.html, style.css, script.js, and the images/ folder) are in the same directory.
+Install Dependencies:
+
+This project uses TailwindCSS and Font Awesome:
+TailwindCSS is loaded via CDN:
+https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css
+Font Awesome icons are included from:
+https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
+Preview the Page:
+
+Open the index.html file in any modern browser.
+Language Toggle:
+
+Click on 🇬🇧 EN or 🇷🇺 RU at the top-right corner to switch languages dynamically.
+View Popups and Modals:
+
+Explore the New Year Popup by interacting with the "Learn More" button.
+Click navigation links in the footer to open modals like "About," "Events," or "Contact."
+Contact Form:
+
+Submit inquiries via the contact form. The form fields include Name, Email, and Message.
+
+Check the Output folder for results of the code.
